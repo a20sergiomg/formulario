@@ -9,12 +9,59 @@
     <meta name="description" content="Formulario">
     <link rel="shortcut icon">
 </head>
-<body>
-<h1>iDESWEB</h1></br>
-<h3>Formulario de registro</h3>
-<div id="contenedor">
 
-</div>
+<body>
+    <h1>iDESWEB</h1></br>
+    <header>
+        <h3>Formulario de registro</h3>
+    </header>
+
+    <div id="contenedor">
+        <div id="form">
+            <form method="post" action="manejo_formulario.php">
+                <fieldset>
+                    <legend>¿Quien eres?</legend>
+                    Nombre: <input type="text" name="Nombre" placeholder="Nombre">
+                    Apellidos: <input type="text" name="Apellidos" placeholder="Apellidos"></br>
+                    <p>Correo Electronico:<input type="email" name="Apellidos" placeholder="Apellidos"></p>
+                    <p>Fecha de Nacimiento <input type="number" name="Dia" min="1" max="30" placeholder="Dia">
+                        <input type="number" name="Mes" min="1" max="12" placeholder="Mes">
+                        <input type="number" name="Anho" min="1900" max="2030" placeholder="Año">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>¿De donde eres?</legend>
+                    <p>Ciudad: <input type="text" name="ciudad" placeholder="Ciudad"></p>
+                    <p>Codigo Postal: <input type="number" name="pass" placeholder="Contraseña"></p>
+                    <p>Pais: <select id="Pais" name="Pais">
+                            <option value="" selected="selected">- Pais -</option>
+                            <option value="españa">España</option>
+                            <option value="francia">Francia</option>
+                            <option value="alemania">Alemania</option>
+                            <option value="otro">Otro</option>
+                        </select></p>
+                </fieldset>
+                <fieldset>
+                    <legend>¿Como quieres iniciar sesion?</legend>
+                    <p>Nombre de Usuario: <input type="text" name="user" placeholder="Usuario"></p>
+                    <p>Contrasaeña: <input type="password1" name="pass1" placeholder="Contraseña"></p>
+                    <p>Repite Contraseña: <input type="password2" name="pass2" placeholder="Contraseña"> </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Condiciones de registro</legend>
+                    <p>Deseo recibir ofertas de iDESWEB </br>
+                        <input type="radio" name="promocion" value="ninguno" checked="checked" /> Una vez al dia <br />
+                        <input type="radio" name="promocion" value="portes" /> Una vez a la semana <br />
+                        <input type="radio" name="promocion" value="descuento" /> Una vez al mes
+                    </p>
+                    <p><input name="acuerdo" type="checkbox" value="si" /> Acepto el acuerdo de servicios, la
+                        declaracion de privacidad y la declaracion de uso de cookies</p>
+                </fieldset> </br>
+                <input type="submit" value="Crear Cuenta">
+            </form>
+        </div>
+
+    </div>
 
 
 </body>
