@@ -9,138 +9,141 @@
     <meta name="description" content="Formulario">
     <link rel="shortcut icon">
     <style type="text/css" rel="stylesheet">
-    
-        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-        * {
-            font-size: 'Poppins', sans-serif;
-        }
+* {
+    font-size: 'Poppins', sans-serif;
+}
 
-        header {
-            width: 100%;
-            height: 50px;
-            background: #F8F8F8;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+header {
+    width: 100%;
+    height: 50px;
+    background: #F8F8F8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .Logo {
-            color: rgb(44, 44, 44);
-            font-size: 1.5em;
-        }
+.Logo {
+    color: rgb(44, 44, 44);
+    font-size: 1.5em;
+}
 
-        .nav {
-            display: flex;
-            align-items: center;
-        }
+.nav {
+    display: flex;
+    align-items: center;
+}
 
-        .nav ol {
-            display: flex;
-            list-style: none;
-        }
+.nav ol {
+    display: flex;
+    list-style: none;
+}
 
-        .btn {
-            position: relative;
-            width: 25px;
-            height: 25px;
-            -webkit-appearance: none;
-            appearance: none;
-            cursor: pointer;
-            display: none;
-        }
+.btn {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    display: none;
+}
 
-        .btn::before {
-            content: '\f0c9';
-            position: absolute;
-            top: 0;
-            left: 0;
-            font-family: 'Font Awesome 5 Free';
-            font-weight: 700;
-            font-size: 2em;
-        }
+.btn::before {
+    content: '\f0c9';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 700;
+    font-size: 2em;
+}
 
-        .nav ol li {
-            margin: 1em;
-        }
+.nav ol li {
+    margin: 1em;
+}
 
-        .nav ol li a {
-            text-decoration: none;
-            padding: 0.2em 1.2em 0.9em 1.2em;
-            border-radius: 10px 10px 0 0;
-            color: rgb(39, 39, 39);
-            transition: all .4s;
-            position: relative;
-            z-index: 1;
-        }
+.nav ol li a {
+    text-decoration: none;
+    padding: 0.2em 1.2em 0.9em 1.2em;
+    border-radius: 10px 10px 0 0;
+    color: rgb(39, 39, 39);
+    transition: all .4s;
+    position: relative;
+    z-index: 1;
+}
 
-        .nav ol li a::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 41px;
-            border-radius: 10px 10px 0 0;
-            background: #853333;
-            transform-origin: bottom;
-            background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
-            transform: scaleY(0.05);
-            transition: all .4s;
-        }
+.nav ol li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 41px;
+    border-radius: 10px 10px 0 0;
+    background: #853333;
+    transform-origin: bottom;
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    transform: scaleY(0.05);
+    transition: all .4s;
+}
 
-        .nav ol li a:hover::before {
-            transform: scaleY(1.1);
-        }
+.nav ol li a:hover::before {
+    transform: scaleY(1.1);
+}
 
-        .nav ol li a:hover {
-            color: white;
-        }
+.nav ol li a:hover {
+    color: white;
+}
 
-        @media(max-width: 1200px) {
-            .btn {
-                display: flex;
-                z-index: 100;
-            }
+@media(max-width: 1200px) {
+    .btn {
+        display: flex;
+        z-index: 100;
+    }
 
-            header {
-                justify-content: space-between;
-                padding: 0 2em;
-            }
+    header {
+        justify-content: space-between;
+        padding: 0 2em;
+    }
 
-            .nav {
-                width: 100%;
-                position: absolute;
-                top:0;
-                left: 0;
-                display: flex;
-                justify-content: center;
-                background: #F8F8F8;
-                transform: translateY(-110%);
-                transition: all .4s;
-            }
-            input:checked ~ .nav{
-                transform: translateY(0%);
-            }
-            input:checked::before{
-                content: '\f00d';
-            }
-        }
-        @media(max-width:700px){
-            .nav ol{
-                flex-direction: column;
-                text-align: center;
-            }
-        }
+    .nav {
+        width: 100%;
+        position: absolute;
+        top:0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        background: #F8F8F8;
+        transform: translateY(-110%);
+        transition: all .4s;
+    }
+    input:checked ~ .nav{
+        transform: translateY(0%);
+    }
+    input:checked::before{
+        content: '\f00d';
+    }
+}
+@media(max-width:700px){
+    .nav ol{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.logo{
+    height: 40px;
+    width: 95px;
+}
     </style>
 </head>
 
 <body>
-
-    <header class="header">
+ <header class="header">
+     <img class="logo" src="imagen.png">
         <p class="Logo">Registro iDESWEB</p>
         <input type="checkbox" name="btn" class="btn" />
 
@@ -153,72 +156,75 @@
                 <li><a href="#">ALTA</a></li>
             </ol>
         </div>
-    </header>
+    </header> 
+    <main>
+        <div id="contenedor">
+            <p>
+            <h1>iDESWEB</h1></br>
+            <h3>Formulario de registro</h3>
+            </p>
+            <div id="form">
+                <form method="post" action="manejo_formulario.php" autocomplete="on">
+                    <fieldset>
+                        <legend>¿Quien eres?</legend>
+                        <label for="nombre">Nombre:</label> <input type="text" id="nombre" name="Nombre"
+                            placeholder="Nombre">
+                        <label for="apellidos">Apellidos:</label> <input type="text" id="apellidos" name="Apellidos"
+                            placeholder="Apellidos"></br>
+                        <p><label for="email">Correo Electronico:</label><input type="email" id="email" name="email"
+                                placeholder="Apellidos"></p>
+                        <p><label for="fecha">Fecha de Nacimiento: </label> <input type="number" id="fecha" name="Dia"
+                                min="1" max="30" placeholder="Dia">
+                            <input type="number" name="Mes" id="fecha" min="1" max="12" placeholder="Mes">
+                            <input type="number" name="Anho" id="fecha" min="1900" max="2030" placeholder="Año">
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>¿De donde eres?</legend>
+                        <p><label for="ciudad">Ciudad:</label> <input type="text" id="ciudad" name="ciudad"
+                                placeholder="Ciudad"></p>
+                        <p><label for="pass"> Postal:</label> <input type="number" id="pass" name="pass"
+                                placeholder="Contraseña"></p>
+                        <p><label for="Pais">Pais:</label> <select id="Pais" name="Pais">
+                                <option value="" selected="selected">- Pais -</option>
+                                <option value="españa">España</option>
+                                <option value="francia">Francia</option>
+                                <option value="alemania">Alemania</option>
+                                <option value="otro">Otro</option>
+                            </select></p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>¿Como quieres iniciar sesion?</legend>
+                        <p><label for="user"> Nombre de Usuario:</label> <input type="text" id="user" name="user"
+                                placeholder="Usuario">
+                        </p>
+                        <p><label for="password2"> Contrasaeña:</label> <input type="password2" id="password2"
+                                name="pass1" placeholder="Contraseña"></p>
+                        <p><label for="password2"> Repite Contraseña:</label> <input type="password2" id="password2"
+                                name="pass2" placeholder="Contraseña"> </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Condiciones de registro</legend>
+                        <p><label for="oferta"> Deseo recibir ofertas de iDESWEB </label></br>
+                            <input type="radio" id="oferta" name="promocion" value="ninguno" checked="checked" /> Una
+                            vez al
+                            dia <br />
+                            <input type="radio" id="oferta" name="promocion" value="portes" /> Una vez a la semana
+                            <br />
+                            <input type="radio" id="oferta" name="promocion" value="descuento" /> Una vez al mes
+                        </p>
+                        <p><input name="acuerdo" id="acuerdo" type="checkbox" value="si" /><label for="acuerdo"> Acepto
+                                el
+                                acuerdo de
+                                servicios, la
+                                declaracion de privacidad y la declaracion de uso de cookies </label></p>
+                    </fieldset> </br>
+                    <input type="submit" value="Crear Cuenta">
+                </form>
+            </div>
 
-
-    <div id="contenedor">
-        <p>
-        <h1>iDESWEB</h1></br>
-        <h3>Formulario de registro</h3>
-        </p>
-        <div id="form">
-            <form method="post" action="manejo_formulario.php">
-                <fieldset>
-                    <legend>¿Quien eres?</legend>
-                    <label for="nombre">Nombre:</label> <input type="text" id="nombre" name="Nombre"
-                        placeholder="Nombre">
-                    <label for="apellidos">Apellidos:</label> <input type="text" id="apellidos" name="Apellidos"
-                        placeholder="Apellidos"></br>
-                    <p><label for="email">Correo Electronico:</label><input type="email" id="email" name="email"
-                            placeholder="Apellidos"></p>
-                    <p><label for="fecha">Fecha de Nacimiento: </label> <input type="number" id="fecha" name="Dia"
-                            min="1" max="30" placeholder="Dia">
-                        <input type="number" name="Mes" id="fecha" min="1" max="12" placeholder="Mes">
-                        <input type="number" name="Anho" id="fecha" min="1900" max="2030" placeholder="Año">
-                    </p>
-                </fieldset>
-                <fieldset>
-                    <legend>¿De donde eres?</legend>
-                    <p><label for="ciudad">Ciudad:</label> <input type="text" id="ciudad" name="ciudad"
-                            placeholder="Ciudad"></p>
-                    <p><label for="pass"> Postal:</label> <input type="number" id="pass" name="pass"
-                            placeholder="Contraseña"></p>
-                    <p><label for="Pais">Pais:</label> <select id="Pais" name="Pais">
-                            <option value="" selected="selected">- Pais -</option>
-                            <option value="españa">España</option>
-                            <option value="francia">Francia</option>
-                            <option value="alemania">Alemania</option>
-                            <option value="otro">Otro</option>
-                        </select></p>
-                </fieldset>
-                <fieldset>
-                    <legend>¿Como quieres iniciar sesion?</legend>
-                    <p><label for="user"> Nombre de Usuario:</label> <input type="text" id="user" name="user"
-                            placeholder="Usuario">
-                    </p>
-                    <p><label for="password2"> Contrasaeña:</label> <input type="password2" id="password2" name="pass1"
-                            placeholder="Contraseña"></p>
-                    <p><label for="password2"> Repite Contraseña:</label> <input type="password2" id="password2"
-                            name="pass2" placeholder="Contraseña"> </p>
-                </fieldset>
-                <fieldset>
-                    <legend>Condiciones de registro</legend>
-                    <p><label for="oferta"> Deseo recibir ofertas de iDESWEB </label></br>
-                        <input type="radio" id="oferta" name="promocion" value="ninguno" checked="checked" /> Una vez al
-                        dia <br />
-                        <input type="radio" id="oferta" name="promocion" value="portes" /> Una vez a la semana <br />
-                        <input type="radio" id="oferta" name="promocion" value="descuento" /> Una vez al mes
-                    </p>
-                    <p><input name="acuerdo" id="acuerdo" type="checkbox" value="si" /><label for="acuerdo"> Acepto el
-                            acuerdo de
-                            servicios, la
-                            declaracion de privacidad y la declaracion de uso de cookies </label></p>
-                </fieldset> </br>
-                <input type="submit" value="Crear Cuenta">
-            </form>
         </div>
-
-    </div>
+    </main>
     <footer>
         </br>
         <div style="clear:left; margin: 0px; padding: 0px; border: 0px; bottom: 0px; text-decoration: none;">
@@ -230,5 +236,6 @@
 
 
 </body>
+
 
 </html>
