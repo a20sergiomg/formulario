@@ -61,6 +61,11 @@
             width: 100%;
             float: left;
         }
+
+        input:focus {
+            border: 2px solid #000;
+            background: #F3F3F3;
+        }
     </style>
 </head>
 
@@ -100,19 +105,21 @@
             <form method="post" action="manejo_formulario.php">
                 <fieldset>
                     <legend>¿Quien eres?</legend>
-                    Nombre: <input type="text" name="Nombre" placeholder="Nombre">
-                    Apellidos: <input type="text" name="Apellidos" placeholder="Apellidos"></br>
-                    <p>Correo Electronico:<input type="email" name="Apellidos" placeholder="Apellidos"></p>
-                    <p>Fecha de Nacimiento <input type="number" name="Dia" min="1" max="30" placeholder="Dia">
-                        <input type="number" name="Mes" min="1" max="12" placeholder="Mes">
-                        <input type="number" name="Anho" min="1900" max="2030" placeholder="Año">
+                    <label for="nombre">Nombre:</label> <input type="text" id="nombre" name="Nombre" placeholder="Nombre">
+                    <label for="apellidos">Apellidos:</label> <input type="text" id="apellidos" name="Apellidos" placeholder="Apellidos"></br>
+                    <p><label for="email">Correo Electronico:</label><input type="email" id="email" name="email"
+                            placeholder="Apellidos"></p>
+                    <p><label for="fecha">Fecha de Nacimiento: </label> <input type="number" id="fecha" name="Dia" min="1" max="30"
+                            placeholder="Dia">
+                        <input type="number" name="Mes" id="fecha" min="1" max="12" placeholder="Mes">
+                        <input type="number" name="Anho" id="fecha" min="1900" max="2030" placeholder="Año">
                     </p>
                 </fieldset>
                 <fieldset>
                     <legend>¿De donde eres?</legend>
-                    <p>Ciudad: <input type="text" name="ciudad" placeholder="Ciudad"></p>
-                    <p>Codigo Postal: <input type="number" name="pass" placeholder="Contraseña"></p>
-                    <p>Pais: <select id="Pais" name="Pais">
+                    <p><label for="ciudad">Ciudad:</label> <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad"></p>
+                    <p><label for="pass"> Postal:</label> <input type="number" id="pass" name="pass" placeholder="Contraseña"></p>
+                    <p><label for="Pais">Pais:</label> <select id="Pais" name="Pais">
                             <option value="" selected="selected">- Pais -</option>
                             <option value="españa">España</option>
                             <option value="francia">Francia</option>
@@ -122,19 +129,23 @@
                 </fieldset>
                 <fieldset>
                     <legend>¿Como quieres iniciar sesion?</legend>
-                    <p>Nombre de Usuario: <input type="text" name="user" placeholder="Usuario"></p>
-                    <p>Contrasaeña: <input type="password1" name="pass1" placeholder="Contraseña"></p>
-                    <p>Repite Contraseña: <input type="password2" name="pass2" placeholder="Contraseña"> </p>
+                    <p><label for="user"> Nombre de Usuario:</label> <input type="text" id="user" name="user" placeholder="Usuario">
+                    </p>
+                    <p><label for="password2"> Contrasaeña:</label> <input type="password2" id="password2" name="pass1"
+                            placeholder="Contraseña"></p>
+                    <p><label for="password2"> Repite Contraseña:</label> <input type="password2" id="password2" name="pass2"
+                            placeholder="Contraseña"> </p>
                 </fieldset>
                 <fieldset>
                     <legend>Condiciones de registro</legend>
-                    <p>Deseo recibir ofertas de iDESWEB </br>
-                        <input type="radio" name="promocion" value="ninguno" checked="checked" /> Una vez al dia <br />
-                        <input type="radio" name="promocion" value="portes" /> Una vez a la semana <br />
-                        <input type="radio" name="promocion" value="descuento" /> Una vez al mes
+                    <p><label for="oferta"> Deseo recibir ofertas de iDESWEB </label></br>
+                        <input type="radio" id="oferta" name="promocion" value="ninguno" checked="checked" /> Una vez al dia <br />
+                        <input type="radio" id="oferta" name="promocion" value="portes" /> Una vez a la semana <br />
+                        <input type="radio" id="oferta" name="promocion" value="descuento" /> Una vez al mes
                     </p>
-                    <p><input name="acuerdo" type="checkbox" value="si" /> Acepto el acuerdo de servicios, la
-                        declaracion de privacidad y la declaracion de uso de cookies</p>
+                    <p><input name="acuerdo" id="acuerdo" type="checkbox" value="si" /><label for="acuerdo"> Acepto el acuerdo de
+                            servicios, la
+                            declaracion de privacidad y la declaracion de uso de cookies </label></p>
                 </fieldset> </br>
                 <input type="submit" value="Crear Cuenta">
             </form>
