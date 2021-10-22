@@ -28,7 +28,7 @@ header {
 }
 
 .Logo {
-    color: rgb(44, 44, 44);
+    color: /*rgb(44, 44, 44);*/#853333;
     font-size: 1.5em;
 }
 
@@ -70,7 +70,7 @@ header {
     text-decoration: none;
     padding: 0.2em 1.2em 0.9em 1.2em;
     border-radius: 10px 10px 0 0;
-    color: rgb(39, 39, 39);
+    color: /*rgb(39, 39, 39);*/#853333;
     transition: all .4s;
     position: relative;
     z-index: 1;
@@ -86,9 +86,10 @@ header {
     border-radius: 10px 10px 0 0;
     background: #853333;
     transform-origin: bottom;
-    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    background: linear-gradient(90deg, rgba(193,7,57,1) 9%, rgba(219,8,8,1) 51%, rgba(214,11,21,1) 100%);
     transform: scaleY(0.05);
     transition: all .4s;
+    z-index: -1;
 }
 
 .nav ol li a:hover::before {
