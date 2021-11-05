@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="es"> <!-- faltaba indicar el idioma-->
+<html lang="es">
+<!-- faltaba indicar el idioma-->
 
 <head>
     <meta charset="UTF-8">
@@ -62,7 +63,7 @@
 						placeholder="Nombre de pila" pattern="[a-záéíóúüñ A-ZÁÉIÓÚÜÑ]{1,15}" accesskey="N" required>
                         lo mismo con los campos requeridos y el pattern para todos los campos con la correspondiente expresión regular
                     -->
-    					<!-- te falta la expresión regular para validar el campo-->
+                    <!-- te falta la expresión regular para validar el campo-->
                     <label for="apellidos">Apellidos:</label> <input type="text" id="apellidos" name="Apellidos"
                         placeholder="Apellidos"></br>
                     <p><label for="email">Correo Electronico:</label><input type="email" id="email" name="email"
@@ -72,22 +73,25 @@
                     pantalla de la gente invidente)-->
                     <p><label for="fecha">Fecha de Nacimiento: </label> <input type="number" id="fecha" name="Dia"
                             min="1" max="30" placeholder="Dia">
-                        <label for="mes" class="oculta">Mes</label><input type="number" name="Mes" id="mes" min="1" max="12" placeholder="Mes">
-                        <label for="anho" class="oculta">Año</label><input type="number" name="Anho" id="anho" min="1900" max="2030" placeholder="Año">
+                        <label for="mes" class="oculta">Mes</label><input type="number" name="Mes" id="mes" min="1"
+                            max="12" placeholder="Mes">
+                        <label for="anho" class="oculta">Año</label><input type="number" name="Anho" id="anho"
+                            min="1900" max="2030" placeholder="Año">
                     </p>
                 </fieldset>
                 <fieldset>
                     <legend>¿De donde eres?</legend>
-     					<!-- te falta la expresión regular para validar el campo-->
+                    <!-- te falta la expresión regular para validar el campo-->
                     <p><label for="ciudad">Ciudad:</label> <input type="text" id="ciudad" name="ciudad"
                             placeholder="Ciudad"></p>
-         					<!-- te falta la expresión regular para validar el campo-->
-              <!--     <p><label for="pass"> Postal:</label> <input type="number" id="pass" name="pass" placeholder="Ejemplo 32332"/></p>
+                    <!-- te falta la expresión regular para validar el campo-->
+                    <!--     <p><label for="pass"> Postal:</label> <input type="number" id="pass" name="pass" placeholder="Ejemplo 32332"/></p>
                             placeholder="Contraseña"></p> -->
-                    <p>	<label for="cp">Código Postal</label>
+                    <p> <label for="cp">Código Postal</label>
                         <!-- el codigo postal no es de tipo number ya que necesitamos mínimo 5 digitos -->
-                        <input type="text" name="cp" id="cp" placeholder="Ej.12345" maxlength="5" minlength="5" pattern="[0-9]{5}">
-            </p>
+                        <input type="text" name="cp" id="cp" placeholder="Ej.12345" maxlength="5" minlength="5"
+                            pattern="[0-9]{5}">
+                    </p>
                     <p><label for="Pais">Pais:</label> <select id="Pais" name="Pais">
                             <option value="" selected="selected">- Pais -</option>
                             <option value="españa">España</option>
@@ -110,25 +114,27 @@
                 </fieldset>
                 <fieldset>
                     <legend>Condiciones de registro</legend>
-                    <p><p>Deseo recibir ofertas de iDESWEB </p>
-                        <!-- El id tiene que ser único y cada input tiene que tener su label 
+                    <p>
+                    <p>Deseo recibir ofertas de iDESWEB </p>
+                    <!-- El id tiene que ser único y cada input tiene que tener su label 
                             <input type="radio" id="oferta" name="promocion" value="ninguno" checked="checked" /> Una
                         vez al dia <br />
                         <input type="radio" id="oferta" name="promocion" value="portes" /> Una vez a la semana
                         <br />
                         <input type="radio" id="oferta" name="promocion" value="descuento" /> Una vez al mes 
                     -->
-                   <p><input type="radio" name="diaria" id="diaria" value="dia"><label for="diaria">Una vez al día</label></p>
-					<p><input type="radio" name="semanal" id="semanal" value="semana"><label for="semanal">Una vez a la
-						semana</label></p>
-					<p><input type="radio" name="mensual" id="mensual" value="mes"><label for="mensual">Una vez al
-						mes</label></p>
-                    
+                    <p><input type="radio" name="diaria" id="diaria" value="dia"><label for="diaria">Una vez al
+                            día</label></p>
+                    <p><input type="radio" name="semanal" id="semanal" value="semana"><label for="semanal">Una vez a la
+                            semana</label></p>
+                    <p><input type="radio" name="mensual" id="mensual" value="mes"><label for="mensual">Una vez al
+                            mes</label></p>
+
                     <p><input name="acuerdo" id="acuerdo" type="checkbox" value="si" /><label for="acuerdo"> Acepto
                             el acuerdo de
                             servicios, la
                             declaracion de privacidad y la declaracion de uso de cookies </label></p>
-                </fieldset> 
+                </fieldset>
                 <!-- </br> -->
                 <input type="submit" value="Crear Cuenta">
             </form>
@@ -143,6 +149,11 @@
                 <img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" />
             </a>
         </div>
+        <a href="https://www.w3.org/WAI/WCAG2AA-Conformance" title="Explanation of WCAG 2 Level AA conformance">
+            <img height="32" width="88" src="https://www.w3.org/WAI/WCAG21/wcag2.1AA-v" alt="Level AA conformance,
+            W3C WAI Web Content Accessibility Guidelines 2.1">
+        </a>
+
     </footer>
 
 
