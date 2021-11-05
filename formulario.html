@@ -62,10 +62,14 @@
 						placeholder="Nombre de pila" pattern="[a-záéíóúüñ A-ZÁÉIÓÚÜÑ]{1,15}" accesskey="N" required>
                         lo mismo con los campos requeridos y el pattern para todos los campos con la correspondiente expresión regular
                     -->
+    					<!-- te falta la expresión regular para validar el campo-->
                     <label for="apellidos">Apellidos:</label> <input type="text" id="apellidos" name="Apellidos"
                         placeholder="Apellidos"></br>
                     <p><label for="email">Correo Electronico:</label><input type="email" id="email" name="email"
                             placeholder="Apellidos"></p>
+                    <!-- en este caso necesitamos que cada input tenga su propio label, con css lo ocultamos pero para ser un 
+                    formulario accesible debe tener un label y asociarse a el input (esto es necesario para los lectores de 
+                    pantalla de la gente invidente)-->
                     <p><label for="fecha">Fecha de Nacimiento: </label> <input type="number" id="fecha" name="Dia"
                             min="1" max="30" placeholder="Dia">
                         <label for="mes" class="oculta">Mes</label><input type="number" name="Mes" id="mes" min="1" max="12" placeholder="Mes">
@@ -74,10 +78,16 @@
                 </fieldset>
                 <fieldset>
                     <legend>¿De donde eres?</legend>
+     					<!-- te falta la expresión regular para validar el campo-->
                     <p><label for="ciudad">Ciudad:</label> <input type="text" id="ciudad" name="ciudad"
                             placeholder="Ciudad"></p>
-                    <p><label for="pass"> Postal:</label> <input type="number" id="pass" name="pass"
-                            placeholder="Contraseña"></p>
+         					<!-- te falta la expresión regular para validar el campo-->
+              <!--     <p><label for="pass"> Postal:</label> <input type="number" id="pass" name="pass" placeholder="Ejemplo 32332"/></p>
+                            placeholder="Contraseña"></p> -->
+                    <p>	<label for="cp">Código Postal</label>
+                        <!-- el codigo postal no es de tipo number ya que necesitamos mínimo 5 digitos -->
+                        <input type="text" name="cp" id="cp" placeholder="Ej.12345" maxlength="5" minlength="5" pattern="[0-9]{5}">
+            </p>
                     <p><label for="Pais">Pais:</label> <select id="Pais" name="Pais">
                             <option value="" selected="selected">- Pais -</option>
                             <option value="españa">España</option>
@@ -91,7 +101,8 @@
                     <p><label for="user"> Nombre de Usuario:</label> <input type="text" id="user" name="user"
                             placeholder="Usuario">
                     </p>
-                    <!-- no puede haber dos id iguales-->
+                    <!-- no puede haber dos id iguales, lo he cambiado para que pasara el test de accesibilidad
+                    falta la expresión regular-->
                     <p><label for="password1"> Contrasaeña:</label> <input type="password" id="password1" name="pass1"
                             placeholder="Contraseña"></p>
                     <p><label for="password2"> Repite Contraseña:</label> <input type="password" id="password2"
